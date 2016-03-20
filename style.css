@@ -1,0 +1,67 @@
+body {
+  background: #151515;
+  text-shadow: 1px 1px #2a2621;
+  color: #d7d0c7;
+  font-family: "Hack", "Helvetica", monospace;
+  font-size: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+body.load {
+  opacity: 1;
+}
+.container {
+  position: relative;
+  margin: 20% auto 20% auto;
+  background-color: #151515;
+  width: 70%;
+  height: 60%;
+}
+div#container-links {
+  height: 50%;
+  text-align: center;
+}
+div#container-search {
+  height: 50%;
+}
+input {
+  box-shadow: 0.2em 0.2em 0.8em #151515;
+  border: none;
+  outline: none;
+  background: #1c1b1b;
+  font-family: inherit;
+  padding: 1em;
+  margin: 1em;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -ms-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+  width: 28%;
+  color: #d7d0c7;
+  position: relative;
+}
+input:focus {
+  background: #282626;
+  color: #cdb28f;
+}
+.link {
+  padding: 1em;
+  margin: 1em;
+  width: 28%;
+  text-align: center;
+}
+a {
+  color: #cdb28f;
+  text-decoration: none;
+}
+a:visited {
+  color: #836540;
+}
+a:hover {
+  color: #e3ccae;
+}
