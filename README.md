@@ -1,5 +1,5 @@
 startpage
 =========
-[codepen](http://codepen.io/wellviana/full/reyzpb/)
+[live](https://wellviana.github.io/startpage/)
 
 ![print](print.png)
