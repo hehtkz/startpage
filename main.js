@@ -1,8 +1,9 @@
-var sitesUrl = ["https://www.reddit.com/", "http://store.steampowered.com/",
-  "http://pt.stackoverflow.com/"
+var sitesUrl = ["https://www.reddit.com/", "https://news.ycombinator.com/",
+  "http://pt.stackoverflow.com/", "https://habitica.com/", "https://nixers.net",
+  "https://bbs.archlinux.org/"
 ];
 
-var sitesNames = ["Reddit", "Steam", "Stack Overflow"];
+var sitesNames = ["reddit", "hn", "so", "habitica", "nixers", "bbs"];
 
 var sitesSearch = ["http://pt.stackoverflow.com/search?q=",
   "https://www.youtube.com/results?search_query=",

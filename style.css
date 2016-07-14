@@ -2,7 +2,7 @@ body {
   background: #151515;
   text-shadow: 1px 1px #2a2621;
   color: #d7d0c7;
-  font-family: "Hack", "Helvetica", monospace;
+  font-family: "Hack", monospace;
   font-size: 1em;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in;
@@ -10,6 +10,7 @@ body {
   -ms-transition: opacity 1s ease-in;
   -o-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
+  height: 100%;
 }
 body.load {
   opacity: 1;
