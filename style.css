@@ -1,6 +1,6 @@
 body {
-  background: #151515;
-  text-shadow: 1px 1px #2a2621;
+  background: #141516;
+  text-shadow: 0.5px 0.5px #222326;
   color: #d7d0c7;
   font-family: "Hack", monospace;
   font-size: 1em;
@@ -10,7 +10,6 @@ body {
   -ms-transition: opacity 1s ease-in;
   -o-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
-  height: 100%;
 }
 body.load {
   opacity: 1;
@@ -18,9 +17,8 @@ body.load {
 .container {
   position: relative;
   margin: 20% auto 20% auto;
-  background-color: #151515;
+  background-color: inherit;
   width: 70%;
-  height: 60%;
 }
 div#container-links {
   height: 50%;
@@ -33,7 +31,7 @@ input {
   box-shadow: 0.2em 0.2em 0.8em #151515;
   border: none;
   outline: none;
-  background: #1c1b1b;
+  background: #1a1d20;
   font-family: inherit;
   padding: 1em;
   margin: 1em;
@@ -43,12 +41,12 @@ input {
   -o-transition: background 1s;
   transition: background 1s;
   width: 28%;
-  color: #d7d0c7;
+  color: #797979;
   position: relative;
 }
 input:focus {
-  background: #282626;
-  color: #cdb28f;
+  background: inherit;
+  color: #a0a6b4;
 }
 .link {
   padding: 1em;
@@ -57,12 +55,12 @@ input:focus {
   text-align: center;
 }
 a {
-  color: #cdb28f;
+  color: #7c88ab;
   text-decoration: none;
 }
 a:visited {
-  color: #836540;
+  color: #797979;
 }
 a:hover {
-  color: #e3ccae;
+  color: #d7d0c7;
 }
