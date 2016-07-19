@@ -52,6 +52,22 @@ for (var i = 0; i < input.length; i++) {
     }
   });
 }
+
+var teclaCtrl = false;
+document.addEventListener('keydown', function(e) {
+	if(e.keyCode == 17)
+	  teclaCtrl = false;
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 17)
+    teclaCtrl = true;
+  for (i = 0; i <= 8; i++) {
+    if (e.keyCode == (97 + i) && teclaCtrl == true)
+      document.getElementById(sitesNIDSearch[i]).focus();
+  }
+});
+
 /*
 var input = document.getElementsByTagName("input");
 for (var i = 0; i < input.length; i++) {
