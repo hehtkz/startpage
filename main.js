@@ -1,9 +1,9 @@
-var sitesUrl = ["https://www.reddit.com/", "https://news.ycombinator.com/",
+var sitesUrl = ["https://news.ycombinator.com/",
   "http://pt.stackoverflow.com/", "https://habitica.com/", "https://nixers.net",
   "https://bbs.archlinux.org/"
 ];
 
-var sitesNames = ["reddit", "hn", "so", "habitica", "nixers", "bbs"];
+var sitesNames = ["hn", "so", "habitica", "nixers", "bbs"];
 
 var sitesSearch = ["http://pt.stackoverflow.com/search?q=",
   "https://www.youtube.com/results?search_query=",
@@ -52,31 +52,3 @@ for (var i = 0; i < input.length; i++) {
     }
   });
 }
-
-var teclaCtrl = false;
-document.addEventListener('keydown', function(e) {
-	if(e.keyCode == 17)
-	  teclaCtrl = false;
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 17)
-    teclaCtrl = true;
-  for (i = 0; i <= 8; i++) {
-    if (e.keyCode == (97 + i) && teclaCtrl == true)
-      document.getElementById(sitesNIDSearch[i]).focus();
-  }
-});
-
-/*
-var input = document.getElementsByTagName("input");
-for (var i = 0; i < input.length; i++) {
-  input[i].addEventListener("keydown", function (event) {
-    var tecla = event.key;
-    if (tecla == "Enter") {
-      var pos = sitesNIDSearch.indexOf(this.id);
-      window.location = sitesSearch[pos] + this.value;
-    }
-  });
-}
-*/
