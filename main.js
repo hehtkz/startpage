@@ -1,27 +1,27 @@
 var sitesUrl = ["https://news.ycombinator.com/",
-  "http://pt.stackoverflow.com/", "https://habitica.com/", "https://nixers.net",
+  "http://pt.stackoverflow.com/", "https://trello.com/", "https://nixers.net",
   "https://bbs.archlinux.org/"
 ];
 
-var sitesNames = ["hn", "so", "habitica", "nixers", "bbs"];
+var sitesNames = ["hn", "so", "trello", "nixers", "bbs"];
 
 var sitesSearch = ["http://pt.stackoverflow.com/search?q=",
   "https://www.youtube.com/results?search_query=",
   "https://github.com/search?&q=",
   "https://thepiratebay.se/search/",
   "http://www.dicio.com.br/pesquisa.php?q=",
-  "https://duckduckgo.com/?q=",
+  "https://reddit.com/r/",
   "http://caniuse.com/#search=",
   "https://wiki.archlinux.org/index.php?search=",
   "http://gen.lib.rus.ec/search.php?req="
 ];
 
 var sitesNIDSearch = ["stack-ov", "youtube", "github", "pirate-bay", "dicio",
-  "duckduckgo", "caniuse", "archwiki", "libgen"
+  "reddit", "caniuse", "archwiki", "libgen"
 ];
 
 var sitesNSearch = ["Stack Overflow", "Youtube", "GitHub", "The Pirate Bay",
-  "Dicio", "DuckDuckGo", "Can I Use", "ArchWiki", "Library Genesis"
+  "Dicio", "Reddit", "Can I Use", "ArchWiki", "Library Genesis"
 ];
 
 var conLink = document.getElementById('container-links');
@@ -52,3 +52,13 @@ for (var i = 0; i < input.length; i++) {
     }
   });
 }
+
+// var botao = document.getElementById("bt");
+// botao.addEventListener("click", function() {
+//     document.body.style.background = "#b68264";
+//     var inputs = document.getElementsByTagName("input");
+//     for (var i = 0; i < inputs.length; i++) {
+//         inputs[i].style.background = "#ad8e7c";
+//         inputs[i].style.color = "inherit";
+//     }
+// });
