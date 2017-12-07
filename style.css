@@ -12,11 +12,6 @@ body {
     background: #141516;
     color: #d7d0c7;
     font-family: 'Inconsolata', monospace;
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
 }
 
 a {
@@ -32,10 +27,6 @@ a:hover {
     color: #d7d0c7;
 }
 
-body.load {
-    opacity: 1;
-}
-
 input {
     background: #1a1d20;
     padding: 1%;
@@ -48,10 +39,6 @@ input {
 @media screen and (min-width: 990px) {
     input {
         font-size: 0.95em;
-        -webkit-transition: background 1s;
-        -moz-transition: background 1s;
-        -ms-transition: background 1s;
-        transition: background 1s;
         width: 30%;
         position: relative;
     }
