@@ -12,7 +12,7 @@ var sitesSearch = [
   "http://pt.stackoverflow.com/search?q=",
   "https://www.youtube.com/results?search_query=",
   "https://github.com/search?&q=",
-  "https://thepiratebay.se/search/",
+  "https://thepiratebay.org/search/",
   "http://www.dicio.com.br/pesquisa.php?q=",
   "https://reddit.com/r/",
   "http://caniuse.com/#search=",
