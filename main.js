@@ -1,13 +1,3 @@
-var sitesUrl = [
-  "https://news.ycombinator.com/",
-  "http://pt.stackoverflow.com/",
-  "https://trello.com/",
-  "https://nixers.net",
-  "https://bbs.archlinux.org/"
-];
-
-var sitesNames = ["hn", "so", "trello", "nixers", "bbs"];
-
 var sitesSearch = [
   "http://pt.stackoverflow.com/search?q=",
   "https://www.youtube.com/results?search_query=",
@@ -44,14 +34,6 @@ var sitesNSearch = [
   "Library Genesis"
 ];
 
-var conLink = document.getElementById("container-links");
-for (i = 0; i < sitesNames.length; i++) {
-  var link = document.createElement("a");
-  link.setAttribute("href", sitesUrl[i]);
-  link.setAttribute("class", "link");
-  link.text = sitesNames[i];
-  conLink.appendChild(link);
-}
 var conSearch = document.getElementById("container-search");
 for (var i = 0; i < sitesNSearch.length; i++) {
   var searchBox = document.createElement("input");
@@ -72,13 +54,3 @@ for (var i = 0; i < input.length; i++) {
     }
   });
 }
-
-// var botao = document.getElementById("bt");
-// botao.addEventListener("click", function() {
-//     document.body.style.background = "#b68264";
-//     var inputs = document.getElementsByTagName("input");
-//     for (var i = 0; i < inputs.length; i++) {
-//         inputs[i].style.background = "#ad8e7c";
-//         inputs[i].style.color = "inherit";
-//     }
-// });
