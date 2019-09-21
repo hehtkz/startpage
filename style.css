@@ -9,53 +9,78 @@
 }
 
 body {
-    background: #141516;
-    color: #d7d0c7;
-    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141516;
+    height: 100vh;
+}
+
+.container-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 70%;
+    transition: ease all .5s;
 }
 
 input {
-    background: inherit;
-    color: #797979;
-    font-family: inherit;
-    margin: 1%;
-    padding: 1%;
+    padding: 8px;
     text-align: center;
-    transition: background-color ease-in-out 0.5s;
+    background-color: inherit;
+    flex-grow: 1;
+    width: 33%;
+    font-family: "Inconsolata", monospace;
+    color: #D1DBE6;
+    border: solid 1px #3A3D40;
+    margin: 10px;
+    transition: border ease-in-out .4s;
+    transition: ease all .5s;
 }
 
 input:focus {
-    background-color: #171819;
-}
-
-#container-search {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    border: solid 1px #747A80;
 }
 
 @media screen and (min-width: 990px) {
     input {
-        font-size: 0.95em;
-        position: relative;
         width: 30%;
-    }
-    .container {
-        bottom: 0;
-        height: 60%;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 70%;
     }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1200px) {
     input {
-        font-size: 1em;
-        padding: 3%;
-        width: 98%;
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 989px){
+    input {
+        width: 80%;
+        font-size: 1.2em;
+    }
+    .container-search {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .container-search {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container-search {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .container-search {
+        height: 80%;
     }
 }
